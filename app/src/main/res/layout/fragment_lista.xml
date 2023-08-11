@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="Eliminar uno"
-        android:textSize="20dp"
+        android:textSize="20sp"
         tools:ignore="MissingConstraints">
 
     </Button>
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="VaciarLista"
-        android:textSize="20dp"
+        android:textSize="20sp"
         tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

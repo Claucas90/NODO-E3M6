@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), BlankFragment.ListaButtonClickListener
 
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            add<BlankFragment>(androidx.fragment.R.id.fragment_container_view_tag)
+            add<BlankFragment>(R.id.fragmentContainer)
         }
     }
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), BlankFragment.ListaButtonClickListener
             val bundle = Bundle()
             listaFragment.arguments = bundle
             supportFragmentManager.commit {
-                replace(androidx.fragment.R.id.fragment_container_view_tag, listaFragment)
+                replace(R.id.fragmentContainer,listaFragment)
                 addToBackStack(null)
             }
         } else {
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), BlankFragment.ListaButtonClickListener
     private fun actualizarVista() {
         val listaFragment = ListaFragment()
         supportFragmentManager.beginTransaction()
-            .replace(androidx.fragment.R.id.fragment_container_view_tag, listaFragment)
+            .replace(R.id.fragmentContainer, listaFragment)
             .commit()
     }
 }
